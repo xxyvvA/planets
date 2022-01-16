@@ -1,16 +1,12 @@
-html,
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+html {
+  min-height: 100%;
+  background-image: url("/img/background-stars.svg");
+  background-repeat: no-repeat;
+  background-color: #070724;
+}
 body {
-  padding: 0;
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
-}
-
-a {
-  color: inherit;
-  text-decoration: none;
-}
-
-* {
-  box-sizing: border-box;
+  min-height: 100%;
 }

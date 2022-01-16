@@ -1,0 +1,7 @@
+.container {
+  @apply flex justify-between text-white px-8 py-5 font-heading items-center text-[28px] border-b border-darkgray;
+}
+
+.planets {
+  @apply flex items-center gap-8 font-body font-bold text-xs text-lightgray;
+}
