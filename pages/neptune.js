@@ -8,7 +8,7 @@ import planets from "../data.json";
 
 export default function Home() {
   const [planetView, setPlanetView] = useState("planet");
-  const planet = planets[0];
+  const planet = planets[7];
   return (
     <>
       <Head title={planet.name} />

@@ -1,4 +1,5 @@
 import styles from "./index.module.css";
+import NextLink from "next/link";
 
 const Navigation = () => {
   return (
@@ -6,14 +7,30 @@ const Navigation = () => {
       <div className={styles.content}>
         <h1>THE PLANETS</h1>
         <div className={styles.planets}>
-          <a href="#">MERCURY</a>
-          <a href="#">VENUS</a>
-          <a href="#">EARTH</a>
-          <a href="#">MARS</a>
-          <a href="#">JUPITER</a>
-          <a href="#">SATURN</a>
-          <a href="#">URANUS</a>
-          <a href="#">NEPTUNE</a>
+          <NextLink href="/" passHref>
+            <a>MERCURY</a>
+          </NextLink>
+          <NextLink href="/venus" passHref>
+            <a>VENUS</a>
+          </NextLink>
+          <NextLink href="/earth" passHref>
+            <a>EARTH</a>
+          </NextLink>
+          <NextLink href="/mars" passHref>
+            <a>MARS</a>
+          </NextLink>
+          <NextLink href="/jupiter" passHref>
+            <a>JUPITER</a>
+          </NextLink>
+          <NextLink href="/saturn" passHref>
+            <a>SATURN</a>
+          </NextLink>
+          <NextLink href="/uranus" passHref>
+            <a>URANUS</a>
+          </NextLink>
+          <NextLink href="/neptune" passHref>
+            <a>NEPTUNE</a>
+          </NextLink>
         </div>
       </div>
     </div>
