@@ -2,6 +2,14 @@
   @apply flex flex-col;
 }
 
+.abomination {
+  @apply relative flex flex-col justify-center;
+}
+
+.geology {
+  @apply absolute w-[200px] top-[325px];
+}
+
 .information {
   @apply grid w-[77%] max-w-[1440px] self-center justify-items-center mb-[87px];
   grid-template-columns: 2.17fr 1fr;
