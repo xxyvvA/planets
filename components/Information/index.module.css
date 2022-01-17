@@ -1,5 +1,5 @@
 .container {
-  @apply flex flex-col w-[350px] h-[541px];
+  @apply flex flex-col w-[350px] h-[541px] justify-between;
 }
 
 .container:not(.name) {

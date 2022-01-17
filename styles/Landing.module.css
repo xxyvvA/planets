@@ -1,0 +1,19 @@
+.container {
+  @apply flex flex-col h-[100vh];
+}
+
+.planets {
+  @apply grid gap-[64px] min-w-[1440px] max-w-[1440px] self-center mt-[200px];
+  grid-template:
+    "mercury venus earth mars" 1fr
+    "jupiter saturn uranus neptune" 1fr/
+    1fr 1fr 1fr 1fr;
+}
+
+.link {
+  @apply flex items-center font-bold text-[30px] border-2 border-darkgray p-[25px];
+}
+
+.images {
+  @apply h-[100px];
+}

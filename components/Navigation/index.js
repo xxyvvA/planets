@@ -5,9 +5,11 @@ const Navigation = () => {
   return (
     <div className={styles.container}>
       <div className={styles.content}>
-        <h1>THE PLANETS</h1>
+        <NextLink href="/" passHref>
+          <a>THE PLANETS</a>
+        </NextLink>
         <div className={styles.planets}>
-          <NextLink href="/" passHref>
+          <NextLink href="/mercury" passHref>
             <a>MERCURY</a>
           </NextLink>
           <NextLink href="/venus" passHref>
