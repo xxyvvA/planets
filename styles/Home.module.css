@@ -1,2 +1,16 @@
 .container {
+  @apply flex flex-col;
+}
+
+.information {
+  @apply grid w-[77%] max-w-[1440px] self-center justify-items-center mb-[87px];
+  grid-template-columns: 2.17fr 1fr;
+}
+
+.information img {
+  @apply self-center max-h-[541px];
+}
+
+.data {
+  @apply w-full flex justify-center;
 }

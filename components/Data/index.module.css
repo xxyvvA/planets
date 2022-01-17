@@ -1,0 +1,17 @@
+.container {
+  @apply grid max-w-[1440px] w-full;
+  grid-template-columns: repeat(4, 1fr);
+  grid-column-gap: 30px;
+}
+
+.content {
+  @apply h-[128px] py-[23px] px-[24px] border border-darkgray;
+}
+
+.name {
+  @apply font-body text-[11px] text-lightgray font-bold tracking-[1px];
+}
+
+.data {
+  @apply font-heading text-[40px] tracking-[1.5px];
+}

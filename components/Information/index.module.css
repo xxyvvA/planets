@@ -1,0 +1,51 @@
+.container {
+  @apply flex flex-col w-[350px] h-[541px];
+}
+
+.container:not(.name) {
+  @apply font-body;
+}
+
+.name {
+  @apply text-[80px] font-heading;
+}
+
+.description {
+  @apply text-[14px] leading-6 my-6;
+}
+
+.source {
+  @apply flex text-[14px] text-darkgray items-center mb-[40px];
+}
+
+.source a {
+  @apply text-lightgray font-bold underline;
+}
+
+.buttons input[type="radio"] {
+  @apply fixed opacity-0 w-0;
+}
+
+.buttons input[type="radio"]:checked + label {
+  @apply bg-pastelblue border-[transparent];
+}
+
+.buttons input[type="radio"]:checked + label span {
+  @apply text-darkgray;
+}
+
+.buttons {
+  @apply flex flex-col justify-between gap-4;
+}
+
+.buttons label {
+  @apply transition duration-200 font-bold tracking-[2.6px] py-3 px-8 border-2 text-[12px] border-darkgray hover:border-[transparent] hover:bg-pastelblue;
+}
+
+.buttons label:hover span {
+  @apply text-darkgray;
+}
+
+.buttons label span {
+  @apply font-bold mr-8 text-lightgray;
+}

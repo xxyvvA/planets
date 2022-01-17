@@ -1,7 +1,14 @@
 .container {
-  @apply flex justify-between text-white px-8 py-5 font-heading items-center text-[28px] border-b border-darkgray;
+  @apply flex justify-center text-white px-8 font-heading text-[28px] border-b border-darkgray h-[85px] mb-[60px];
+}
+
+.content {
+  @apply flex justify-between items-center w-full max-w-[1440px] h-full;
 }
 
 .planets {
-  @apply flex items-center gap-8 font-body font-bold text-xs text-lightgray;
+  @apply flex gap-8 font-body font-bold text-xs text-lightgray h-full items-center;
+}
+.planets a {
+  @apply font-bold select-none border-t-4 border-[transparent] transition duration-[250ms] hover:border-pastelblue hover:text-white h-full flex items-center;
 }
