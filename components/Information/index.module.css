@@ -1,9 +1,13 @@
 .container {
-  @apply flex flex-col w-[350px] h-[541px] justify-between;
+  @apply flex md:flex-row lg:flex-col md:w-full md:px-6 lg:w-[350px] lg:h-[541px] md:items-center justify-between;
 }
 
 .container:not(.name) {
   @apply font-body;
+}
+
+.partition {
+  @apply md:w-[350px] lg:w-full;
 }
 
 .name {
@@ -11,7 +15,7 @@
 }
 
 .description {
-  @apply text-[14px] leading-6 my-6;
+  @apply md:text-[11px] lg:text-[14px] leading-6 my-6;
 }
 
 .source {
@@ -35,7 +39,7 @@
 }
 
 .buttons {
-  @apply flex flex-col justify-between gap-4;
+  @apply flex flex-col md:h-[170px] lg:h-[350px] justify-between gap-4;
 }
 
 .buttons label {

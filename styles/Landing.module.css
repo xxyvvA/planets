@@ -3,11 +3,7 @@
 }
 
 .planets {
-  @apply grid gap-[64px] min-w-[1440px] max-w-[1440px] self-center mt-[200px];
-  grid-template:
-    "mercury venus earth mars" 1fr
-    "jupiter saturn uranus neptune" 1fr/
-    1fr 1fr 1fr 1fr;
+  @apply grid gap-[64px] w-full max-w-[1440px] self-center md:mt-12  lg:mt-[200px] md:grid-rows-4 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-4 px-6;
 }
 
 .link {

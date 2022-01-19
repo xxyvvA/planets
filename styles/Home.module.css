@@ -11,12 +11,24 @@
 }
 
 .information {
-  @apply grid w-[77%] max-w-[1440px] self-center justify-items-center mb-[87px];
-  grid-template-columns: 2.17fr 1fr;
+  @apply grid w-full max-w-[1440px] self-center justify-items-center mb-[87px];
+}
+
+@media only screen and (min-width: 768px) {
+  .information {
+    grid-template-rows: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 1024px) {
+  .information {
+    grid-template-columns: 2.17fr 1fr;
+    grid-template-rows: 1fr;
+  }
 }
 
 .information img {
-  @apply self-center max-h-[541px];
+  @apply self-center md:max-h-[300px] lg:max-h-[541px];
 }
 
 .data {

@@ -1,14 +1,14 @@
 .container {
-  @apply flex justify-center text-white px-8 font-heading text-[28px] border-b border-darkgray h-[85px] mb-[60px];
+  @apply flex justify-center text-white px-8 font-heading text-[28px] border-b border-darkgray mb-[60px] md:pt-6 lg:pt-0;
 }
 
 .content {
-  @apply flex justify-between items-center w-full max-w-[1440px] h-full;
+  @apply flex justify-between items-center w-full max-w-[1440px] h-full md:flex-col lg:flex-row;
 }
 
 .planets {
   @apply flex gap-8 font-body font-bold text-xs text-lightgray h-full items-center;
 }
 .planets a {
-  @apply font-bold select-none border-t-4 border-[transparent] transition duration-[250ms] hover:border-pastelblue hover:text-white h-full flex items-center;
+  @apply font-bold select-none md:border-b-4 lg:border-t-4 lg:border-b-0 border-[transparent] transition duration-[250ms]  hover:border-pastelblue hover:text-white  h-[85px] flex items-center;
 }

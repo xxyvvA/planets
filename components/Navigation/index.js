@@ -6,7 +6,7 @@ const Navigation = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <NextLink href="/" passHref>
-          <a>THE PLANETS</a>
+          <a className="planets">THE PLANETS</a>
         </NextLink>
         <div className={styles.planets}>
           <NextLink href="/mercury" passHref>
