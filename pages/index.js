@@ -13,7 +13,7 @@ const Landing = () => {
         <Navigation />
         <div className={styles.planets}>
           {planets.map((planet) => (
-            <NextLink href={`/${planet.name.toLowerCase()}`} passHref>
+            <NextLink href={`/${planet.name.toLowerCase()}`} passHref key={planet.name}>
               <a className={styles.link}>
                 <img src={planet.images.planet} className={styles.images} />
                 &nbsp;&nbsp;
