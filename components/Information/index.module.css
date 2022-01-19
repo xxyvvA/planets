@@ -1,5 +1,5 @@
 .container {
-  @apply flex md:flex-row lg:flex-col md:w-full md:px-6 lg:w-[350px] lg:h-[541px] md:items-center justify-between;
+  @apply flex md:flex-row lg:flex-col md:w-full md:px-6 lg:p-0 lg:w-[350px] lg:h-[541px] md:items-center justify-between;
 }
 
 .container:not(.name) {
