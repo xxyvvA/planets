@@ -1,17 +1,15 @@
 .container {
-  @apply grid max-w-[1440px] w-full;
-  grid-template-columns: repeat(4, 1fr);
-  grid-column-gap: 30px;
+  @apply grid md:w-full md:px-6 lg:max-w-[1440px] lg:w-full grid-cols-4 gap-x-[30px] lg:mx-[30px];
 }
 
 .content {
-  @apply h-[128px] py-[23px] px-[24px] border border-darkgray;
+  @apply md:h-[90px] lg:h-[128px] md:py-[20px] lg:py-[23px] md:px-[21px] lg:px-[24px] border border-darkgray;
 }
 
 .name {
-  @apply font-body text-[11px] text-lightgray font-bold tracking-[1px];
+  @apply font-body md:text-[8px] lg:text-[11px] text-lightgray font-bold tracking-[1px];
 }
 
 .data {
-  @apply font-heading text-[40px] tracking-[1.5px];
+  @apply font-heading md:text-[22px] lg:text-[36px] tracking-[1.5px];
 }

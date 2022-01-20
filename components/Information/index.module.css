@@ -7,19 +7,19 @@
 }
 
 .partition {
-  @apply md:w-[350px] lg:w-full;
+  @apply md:w-[350px] lg:w-full md:h-[280px] lg:h-[auto] md:flex md:flex-col md:justify-between lg:block;
 }
 
 .name {
-  @apply text-[80px] font-heading;
+  @apply md:text-[48px] lg:text-[80px] font-heading;
 }
 
 .description {
-  @apply md:text-[11px] lg:text-[14px] leading-6 my-6;
+  @apply md:text-[11px] lg:text-[14px] leading-6 md:mb-6 md:mt-2 lg:my-6;
 }
 
 .source {
-  @apply flex text-[14px] text-darkgray items-center mb-[40px];
+  @apply flex text-[14px] text-darkgray items-center mb-[30px];
 }
 
 .source a {
@@ -39,7 +39,7 @@
 }
 
 .buttons {
-  @apply flex flex-col md:h-[170px] lg:h-[350px] justify-between gap-4;
+  @apply flex flex-col md:h-[170px] lg:w-full justify-between gap-4;
 }
 
 .buttons label {

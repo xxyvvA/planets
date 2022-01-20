@@ -7,7 +7,7 @@
 }
 
 .geology {
-  @apply absolute w-[200px] top-[325px];
+  @apply absolute md:w-[40%] lg:w-[200px] md:top-[200px] lg:top-[325px];
 }
 
 .information {
