@@ -15,7 +15,11 @@ const Landing = () => {
           {planets.map((planet) => (
             <NextLink href={`/${planet.name.toLowerCase()}`} passHref key={planet.name}>
               <a className={styles.link}>
-                <img src={planet.images.planet} className={styles.images} />
+                <img
+                  src={planet.images.planet}
+                  className={styles.images}
+                  alt={`${planet.name.toLowerCase()}`}
+                />
                 &nbsp;&nbsp;
                 {planet.name}
               </a>

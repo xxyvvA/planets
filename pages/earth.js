@@ -17,11 +17,15 @@ export default function Home() {
         <div className={styles.information}>
           {planetView === "geology" ? (
             <div className={styles.abomination}>
-              <img className={styles.planet} src={planet.images.planet} />
-              <img className={styles.geology} src={planet.images[planetView]} />
+              <img className={styles.planet} src={planet.images.planet} alt="Earth" />
+              <img
+                className={styles.geology}
+                src={planet.images[planetView]}
+                alt="geological view of Earth"
+              />
             </div>
           ) : (
-            <img src={planet.images[planetView]} />
+            <img src={planet.images[planetView]} alt="Earth" />
           )}
           <Information
             name={planet.name}
