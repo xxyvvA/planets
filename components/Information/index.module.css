@@ -1,5 +1,5 @@
 .container {
-  @apply flex md:flex-row lg:flex-col md:w-full md:px-6 lg:p-0 lg:w-[350px] lg:h-[541px] md:items-center justify-between;
+  @apply flex relative md:static h-[600px] md:h-auto flex-col-reverse md:flex-row lg:flex-col md:w-full md:px-6 lg:p-0 lg:w-[350px] lg:h-[541px] items-center justify-between;
 }
 
 .container:not(.name) {
@@ -7,19 +7,19 @@
 }
 
 .partition {
-  @apply md:w-[350px] lg:w-full md:h-[280px] lg:h-[auto] md:flex md:flex-col md:justify-between lg:block;
+  @apply px-[10%] md:px-0 md:w-[350px] lg:w-full md:h-[280px] lg:h-[auto] flex flex-col items-center md:items-stretch md:justify-between lg:block;
 }
 
 .name {
-  @apply md:text-[48px] lg:text-[80px] font-heading;
+  @apply text-[40px] md:text-[48px] lg:text-[80px] font-heading;
 }
 
 .description {
-  @apply md:text-[11px] lg:text-[14px] leading-6 md:mb-6 md:mt-2 lg:my-6;
+  @apply mt-[18px] md:mt-0 mb-[40px] md:mb-0 text-[11px] text-center md:text-left leading-[22px] lg:text-[13px] md:leading-6 md:mb-6 md:mt-2 lg:my-6;
 }
 
 .source {
-  @apply flex text-[14px] text-darkgray items-center mb-[30px];
+  @apply flex text-[12px] md:text-[14px] text-darkgray items-center md:mb-[30px];
 }
 
 .source a {
@@ -30,26 +30,127 @@
   @apply fixed opacity-0 w-0;
 }
 
-.buttons input[type="radio"]:checked + label {
-  @apply bg-pastelblue border-[transparent];
-}
-
-.buttons input[type="radio"]:checked + label span {
-  @apply text-darkgray;
+.buttons input[type="radio"]:checked + label span:not(.word) {
+  @apply md:text-darkgray;
 }
 
 .buttons {
-  @apply flex flex-col md:h-[170px] lg:w-full justify-between gap-4;
+  @apply flex h-full px-[7%] border-b border-darkgray md:border-none md:px-0 md:py-0 md:flex-col md:h-[170px] lg:w-full justify-between md:gap-4;
+}
+
+.buttons .mercury {
+  @apply md:hover:bg-pastelblue;
+}
+
+.buttons .venus {
+  @apply md:hover:bg-yellow;
+}
+
+.buttons .earth {
+  @apply md:hover:bg-purple;
+}
+
+.buttons .mars {
+  @apply md:hover:bg-lighterred;
+}
+
+.buttons .jupiter {
+  @apply md:hover:bg-darkerred;
+}
+
+.buttons .saturn {
+  @apply md:hover:bg-orange;
+}
+
+.buttons .uranus {
+  @apply md:hover:bg-turquoise;
+}
+
+.buttons .neptune {
+  @apply md:hover:bg-blue;
 }
 
 .buttons label {
-  @apply transition duration-200 font-bold tracking-[2.6px] py-3 px-8 border-2 text-[12px] border-darkgray hover:border-[transparent] hover:bg-pastelblue;
+  @apply flex border-b-4 border-[transparent] items-center text-[9px] md:transition md:duration-200 font-bold tracking-[1.93px] md:tracking-[2.6px] md:py-3 md:px-8 md:border-2 md:text-[12px] md:border-darkgray md:hover:border-[transparent];
 }
 
-.buttons label:hover span {
-  @apply text-darkgray;
+.buttons label:hover span:not(.word) {
+  @apply md:text-darkgray;
 }
 
-.buttons label span {
-  @apply font-bold mr-8 text-lightgray;
+.buttons label span:not(.word) {
+  @apply md:font-bold mr-8 text-lightgray;
+}
+
+.number {
+  @apply absolute md:static text-[0px] md:text-[12px];
+}
+
+.word {
+  @apply mr-0 absolute md:static text-[0px] md:text-[12px];
+}
+
+.border {
+  @apply w-full h-12 md:w-[350px] md:h-auto;
+}
+
+.buttons input[type="radio"]:checked + .mercury {
+  @apply border-[#DEF4FC] md:border-[transparent] md:bg-pastelblue;
+}
+.buttons input[type="radio"]:checked + .venus {
+  @apply border-[#F7CC7F] md:border-[transparent] md:bg-yellow;
+}
+.buttons input[type="radio"]:checked + .earth {
+  @apply border-[#545BFE] md:border-[transparent] md:bg-purple;
+}
+.buttons input[type="radio"]:checked + .mars {
+  @apply border-[#FF6A45] md:border-[transparent] md:bg-lighterred;
+}
+.buttons input[type="radio"]:checked + .jupiter {
+  @apply border-[#ECAD7A] md:border-[transparent] md:bg-darkerred;
+}
+.buttons input[type="radio"]:checked + .saturn {
+  @apply border-[#FCCB6B] md:border-[transparent] md:bg-orange;
+}
+.buttons input[type="radio"]:checked + .uranus {
+  @apply border-[#65F0D5] md:border-[transparent] md:bg-turquoise;
+}
+.buttons input[type="radio"]:checked + .neptune {
+  @apply border-[#497EFA] md:border-[transparent] md:bg-blue;
+}
+
+.geology {
+  @apply absolute bottom-[45%] w-[20%] md:w-0;
+}
+
+.planet.mercury {
+  @apply w-[111px] md:w-0;
+}
+
+.planet.venus {
+  @apply w-[154px] md:w-0;
+}
+
+.planet.earth {
+  @apply w-[173px] md:w-0;
+}
+
+.planet.mars {
+  @apply w-[129px] md:w-0;
+}
+
+.planet.jupiter {
+  @apply w-[224px] md:w-0;
+}
+
+.planet.saturn {
+  @apply w-[256px] md:w-0;
+}
+
+.planet.uranus {
+  @apply w-[176px] md:w-0;
+}
+
+.planet.neptune {
+  @apply w-[173px] md:w-0;
 }

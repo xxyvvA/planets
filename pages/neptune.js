@@ -25,10 +25,11 @@ export default function Home() {
               />
             </div>
           ) : (
-            <img src={planet.images[planetView]} alt="Neptune" />
+            <img className={styles.planet} src={planet.images[planetView]} alt="Neptune" />
           )}
           <Information
             name={planet.name}
+            planet={planets[7]}
             description={planet[planetView].content}
             source={planet[planetView].source}
             planetView={planetView}

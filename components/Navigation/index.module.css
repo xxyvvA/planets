@@ -1,14 +1,46 @@
 .container {
-  @apply flex justify-center text-white px-8 font-heading text-[28px] border-b border-darkgray mb-[60px] md:pt-6 lg:pt-0;
+  @apply border-b border-darkgray md:flex md:justify-center md:text-white md:px-8 md:font-heading md:text-[28px] md:border-b md:mb-[60px] md:pt-6 lg:pt-0;
 }
 
 .content {
-  @apply flex justify-between items-center w-full max-w-[1440px] h-full md:flex-col lg:flex-row;
+  @apply relative py-5 px-[7%] md:px-0 md:py-0 flex justify-between items-center md:w-full md:max-w-[1440px] md:h-full md:flex-col lg:flex-row;
+}
+
+.title {
+  @apply text-[28px] tracking-[-1.05px] md:tracking-normal font-heading;
 }
 
 .planets {
-  @apply flex gap-8 font-body font-bold text-xs text-lightgray h-full items-center;
+  @apply text-[0px] md:flex md:gap-8 md:font-body md:font-bold md:text-xs md:text-lightgray md:h-full md:items-center;
 }
 .planets a {
-  @apply font-bold select-none md:border-b-4 lg:border-t-4 lg:border-b-0 border-[transparent] transition duration-[250ms]  hover:border-pastelblue hover:text-white  h-[85px] flex items-center;
+  @apply md:font-bold md:select-none md:border-b-4 lg:border-t-4 lg:border-b-0 md:border-[transparent] md:transition md:duration-[250ms] md:hover:text-white  md:h-[85px] md:flex md:items-center;
+}
+.ham {
+  @apply absolute right-[7%] md:w-0 md:h-0;
+}
+
+.mercury {
+  @apply md:hover:border-pastelblue;
+}
+.venus {
+  @apply md:hover:border-yellow;
+}
+.earth {
+  @apply md:hover:border-purple;
+}
+.mars {
+  @apply md:hover:border-lighterred;
+}
+.jupiter {
+  @apply md:hover:border-darkerred;
+}
+.saturn {
+  @apply md:hover:border-orange;
+}
+.uranus {
+  @apply md:hover:border-turquoise;
+}
+.neptune {
+  @apply md:hover:border-blue;
 }

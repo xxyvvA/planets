@@ -11,7 +11,7 @@
 }
 
 .information {
-  @apply grid w-full max-w-[1440px] self-center justify-items-center mb-[87px];
+  @apply grid w-full max-w-[1440px] self-center justify-items-center mb-[10%] md:mb-[87px];
 }
 
 @media only screen and (min-width: 768px) {
@@ -27,10 +27,14 @@
   }
 }
 
-.information img {
-  @apply self-center md:max-h-[300px] lg:max-h-[541px];
+.planet {
+  @apply max-h-0 md:self-center md:max-h-[300px] lg:max-h-[541px];
+}
+
+.geology {
+  @apply self-center;
 }
 
 .data {
-  @apply w-full flex justify-center;
+  @apply w-full flex justify-center px-[7%] md:px-0;
 }

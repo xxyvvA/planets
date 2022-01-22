@@ -20,8 +20,10 @@ const Landing = () => {
                   className={styles.images}
                   alt={`${planet.name.toLowerCase()}`}
                 />
+                <div className={`${styles.dot} ${styles[planet.name.toLowerCase()]}`}></div>
                 &nbsp;&nbsp;
                 {planet.name}
+                <img className={styles.arrow} src="/img/icon-chevron.svg" />
               </a>
             </NextLink>
           ))}

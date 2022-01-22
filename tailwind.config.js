@@ -19,6 +19,11 @@ module.exports = {
       heading: "Antonio",
       body: "Spartan",
     },
+    extend: {
+      gridTemplateRows: {
+        8: "repeat(8,minmax(0,1fr))",
+      },
+    },
   },
   plugins: [],
 };

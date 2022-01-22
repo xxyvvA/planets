@@ -1,15 +1,48 @@
 .container {
-  @apply flex flex-col h-[100vh];
+  @apply md:flex md:flex-col md:h-[100vh];
 }
 
 .planets {
-  @apply grid gap-[64px] w-full max-w-[1440px] self-center md:mt-12  lg:mt-[200px] md:grid-rows-4 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-4 px-6;
+  @apply grid bg-black md:bg-[transparent] grid-rows-8 md:gap-[64px] md:w-full md:max-w-[1440px] md:self-center md:mt-12  lg:mt-[200px] md:grid-rows-4 md:grid-cols-2 xl:grid-rows-2 xl:grid-cols-4 md:px-6;
 }
 
 .link {
-  @apply flex items-center font-bold text-[30px] border-2 border-darkgray p-[25px];
+  @apply mx-[6%] md:mx-0 py-7 border-b flex items-center tracking-[1.36px] md:tracking-normal font-body font-bold md:text-[30px] md:border-2 border-darkgray md:py-[25px] md:px-[25px];
 }
 
 .images {
-  @apply h-[100px];
+  @apply h-0 md:h-[100px];
+}
+
+.dot {
+  @apply mr-[3%] md:mr-0 h-[20px] w-[20px] rounded-[50%] md:h-0;
+}
+
+.arrow {
+  @apply ml-[auto] md:w-0;
+}
+
+.mercury {
+  @apply bg-[#DEF4FC];
+}
+.venus {
+  @apply bg-[#F7CC7F];
+}
+.earth {
+  @apply bg-[#545BFE];
+}
+.mars {
+  @apply bg-[#FF6A45];
+}
+.jupiter {
+  @apply bg-[#ECAD7A];
+}
+.saturn {
+  @apply bg-[#FCCB6B];
+}
+.uranus {
+  @apply bg-[#65F0D5];
+}
+.neptune {
+  @apply bg-[#497EFA];
 }

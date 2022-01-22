@@ -6,34 +6,39 @@ const Navigation = () => {
     <div className={styles.container}>
       <div className={styles.content}>
         <NextLink href="/" passHref>
-          <a className="planets">THE PLANETS</a>
+          <a className={styles.title}>THE PLANETS</a>
         </NextLink>
         <div className={styles.planets}>
           <NextLink href="/mercury" passHref>
-            <a>MERCURY</a>
+            <a className={styles.mercury}>MERCURY</a>
           </NextLink>
           <NextLink href="/venus" passHref>
-            <a>VENUS</a>
+            <a className={styles.venus}>VENUS</a>
           </NextLink>
           <NextLink href="/earth" passHref>
-            <a>EARTH</a>
+            <a className={styles.earth}>EARTH</a>
           </NextLink>
           <NextLink href="/mars" passHref>
-            <a>MARS</a>
+            <a className={styles.mars}>MARS</a>
           </NextLink>
           <NextLink href="/jupiter" passHref>
-            <a>JUPITER</a>
+            <a className={styles.jupiter}>JUPITER</a>
           </NextLink>
           <NextLink href="/saturn" passHref>
-            <a>SATURN</a>
+            <a className={styles.saturn}>SATURN</a>
           </NextLink>
           <NextLink href="/uranus" passHref>
-            <a>URANUS</a>
+            <a className={styles.uranus}>URANUS</a>
           </NextLink>
           <NextLink href="/neptune" passHref>
-            <a>NEPTUNE</a>
+            <a className={styles.neptune}>NEPTUNE</a>
           </NextLink>
         </div>
+        <NextLink href="/" passHref>
+          <a className={styles.ham}>
+            <img src="img/icon-hamburger.svg" />
+          </a>
+        </NextLink>
       </div>
     </div>
   );

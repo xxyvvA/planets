@@ -1,15 +1,15 @@
 .container {
-  @apply grid md:w-full md:px-6 lg:max-w-[1440px] lg:w-full grid-cols-4 gap-x-[30px] lg:mx-[30px];
+  @apply grid gap-y-[10px] grid-rows-4 md:grid-rows-none w-full md:px-6 lg:max-w-[1440px] lg:w-full md:grid-cols-4 md:gap-x-[30px] lg:mx-[30px];
 }
 
 .content {
-  @apply md:h-[90px] lg:h-[128px] md:py-[20px] lg:py-[23px] md:px-[21px] lg:px-[24px] border border-darkgray;
+  @apply flex px-6 py-2 items-center justify-between md:block md:h-[90px] lg:h-[128px] md:py-[20px] lg:py-[23px] md:px-[21px] lg:px-[24px] border border-darkgray;
 }
 
 .name {
-  @apply font-body md:text-[8px] lg:text-[11px] text-lightgray font-bold tracking-[1px];
+  @apply tracking-[0.73px] font-body text-[8px] lg:text-[11px] text-lightgray font-bold md:tracking-[1px];
 }
 
 .data {
-  @apply font-heading md:text-[22px] lg:text-[36px] tracking-[1.5px];
+  @apply tracking-[-0.75px] font-heading text-[20px] md:text-[22px] lg:text-[36px] md:tracking-[1.5px];
 }
